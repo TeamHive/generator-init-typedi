@@ -1,0 +1,50 @@
+{
+    "name": "<%= moduleName %>",
+    "version": "0.0.1",
+    "description": "<%= description %>",
+    "keywords": [
+        "Typescript"
+    ],
+    "license": "ISC",
+    "author": "<%= gitUser %>",
+    "contributors": [
+        "<%= authorName %> <<%= authorUsername %>>"
+    ],
+    "homepage": "https://github.com/<%= gitUser %>/<%= moduleName %>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/<%= gitUser %>/<%= moduleName %>.git"
+    },
+    "bugs": {
+        "url": "https://github.com/<%= gitUser %>/<%= moduleName %>/issues"
+    },
+    "scripts": {
+        "test": "nyc  -r lcov -e .ts -x \"*.spec.ts\" jasmine-ts \"src/**/*.spec.ts\"",
+        "test:debug": "node --inspect-brk=5858 node_modules/.bin/jasmine-ts \"src/**/*.spec.ts\"",
+        "prestart": "npm run compile",
+        "start": "gulp start",
+        "start:debug": "npm run compile && nodemon --inspect-brk=5858 dist/index.js",
+        "compile": "npm run clear && tsc",
+        "clear": "rm -rf dist"
+    },
+    "dependencies": {
+        "@teamhive/typedi-common": "1.0.0",
+        "config": "^3.0.1",
+        "log4js": "^4.0.2",
+        "raven": "^2.3.0",
+        "reflect-metadata": "^0.1.12",
+        "typedi": "^0.8.0"
+    },
+    "devDependencies": {
+        "@types/config": "0.0.34",
+        "@types/node": "^11.9.4",
+        "@types/raven": "^2.1.4",
+        "gulp": "^3.9.1",
+        "gulp-nodemon": "^2.2.1",
+        "gulp-tslint": "^8.1.2",
+        "gulp-typescript": "^5.0.0-alpha.3",
+        "nyc": "^13.0.1",
+        "tslint": "^5.9.1",
+        "typescript": "^3.0.3"
+    }
+}

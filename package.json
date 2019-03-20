@@ -1,0 +1,46 @@
+{
+    "name": "@teamhive/generator-init-typedi",
+    "version": "1.0.0",
+    "description": "Yeoman generator for TypeDI based on our standards",
+    "homepage": "https://github.com/TeamHive/generator-init-typedi",
+    "private": false,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TeamHive/generator-init-typedi.git"
+    },
+    "bugs": {
+        "url": "https://github.com/TeamHive/generator-init-typedi/issues"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "tsc -w",
+        "prepack": "tsc",
+        "postpublish": "git push && git push --tags"
+    },
+    "author": "TeamHive",
+    "contributors": [
+        "John Pinkster <jpinkster>",
+        "Tyler Vander Maas <tvmaasjazz>"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "yeoman",
+        "generator",
+        "yeoman-generator",
+        "TypeDI"
+    ],
+    "dependencies": {
+        "download-git-repo": "^1.1.0",
+        "lodash": "^4.17.11",
+        "yeoman-generator": "^3.1.1",
+        "yosay": "^2.0.2"
+    },
+    "devDependencies": {
+        "@types/lodash": "^4.14.118",
+        "@types/node": "^10.12.10",
+        "@types/yeoman-generator": "^3.0.1",
+        "@types/yosay": "0.0.29",
+        "tslint": "^5.11.0",
+        "typescript": "^3.1.6"
+    }
+}
