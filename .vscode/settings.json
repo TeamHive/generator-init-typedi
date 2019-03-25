@@ -5,5 +5,9 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true
-    }
+    },
+    "typescript.extension.sortImports.sortOnSave": true,
+    "typescript.extension.sortImports.sortMethod": "path",
+    "typescript.extension.sortImports.pathSortOrder": ["package", "relativeDownLevel", "relativeUpLevel"],
+    "typescript.extension.sortImports.maxNamedImportsInSingleLine": 6
 }
