@@ -33,7 +33,7 @@
         "download-git-repo": "^1.1.0",
         "lodash": "^4.17.11",
         "sort-package-json": "^1.22.0",
-        "yeoman-generator": "^3.1.1",
+        "yeoman-generator": "^4.1.0",
         "yosay": "^2.0.2"
     },
     "devDependencies": {
